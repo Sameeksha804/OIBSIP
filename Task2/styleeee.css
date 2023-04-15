@@ -1,0 +1,178 @@
+/* Reset default margin and padding for all elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font and background color for body */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #E6E6FA;
+}
+
+/* Style header section */
+#header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.header-text {
+  margin-top: 100px;
+}
+
+.header-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.header-text span {
+  color: #ff6b6b;
+}
+
+/* Style about section */
+#about {
+  padding: 100px 0;
+}
+
+.about-col-1 {
+  flex: 1;
+}
+
+.about-col-1 img {
+  max-width: 100%;
+}
+
+.about-col-2 {
+  flex: 1;
+  padding: 0 50px;
+}
+
+.sub-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.tab-titles {
+  margin-top: 30px;
+}
+
+.tab-links {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.tab-links.active-link {
+  color: #ff6b6b;
+}
+
+.tab-contents {
+  display: none;
+  margin-top: 20px;
+}
+
+.active-tab {
+  display: block;
+}
+
+.tab-contents ul {
+  list-style-type: none;
+}
+
+.tab-contents ul li {
+  margin-bottom: 20px;
+}
+
+.tab-contents ul li span {
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+/* Style contact section */
+#contact {
+  padding: 100px 0;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-left .sub-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contact-left i {
+  margin-right: 10px;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-right form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-right form input[type="text"],
+.contact-right form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-right form textarea {
+  height: 100px;
+}
+
+.contact-right form input[type="submit"] {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav ul li a {
+    margin-left: 10px;
+  }
+
+  .header-text h1 {
+    font-size: 36px;
+  }
+
+  .about-col-1
